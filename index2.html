@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrain</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container{
+            height: 500px;
+            width: 500px;
+            background-color: black;
+            display: grid;
+            grid-template-columns:140px 300px 40px ;
+            grid-template-rows:160px 160px 75px 75px ;
+            gap: 10px;
+        }
+
+        .item{
+            background-color: antiquewhite;
+        }
+
+        .red{
+            background-color: red;
+            grid-area: 1/2/3/4;
+        }
+
+        .blue1{
+            background-color: blue;
+            grid-row: span 2;
+        }
+
+        .white3{
+            grid-row: span 2;
+        }
+
+        .blue2{
+            background-color: blue;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item white1"></div>
+
+        <div class="item red"></div>
+
+        <div class="item white2"></div>
+
+        <div class="item blue1"></div>
+
+        <div class="item white3"></div>
+
+        <div class="item blue2"></div>
+
+        <div class="item yellow"></div>
+    </div>
+</body>
+</html>
